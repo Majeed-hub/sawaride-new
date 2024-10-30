@@ -97,6 +97,17 @@ const Navbar = () => {
               About Us
             </NavLink>
             <NavLink
+              to="/FAQ"
+              className={({ isActive }) =>
+                isActive
+                  ? "block text-white font-bold px-3 py-2 rounded-md text-base font-medium"
+                  : "block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+              }
+              onClick={toggleMenu}
+            >
+              FAQ
+            </NavLink>
+            <NavLink
               to="/"
               className={({ isActive }) =>
                 isActive
