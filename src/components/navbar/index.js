@@ -12,38 +12,52 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="text-white flex items-center gap-5 font-bold text-xl">
-            <img src={sawaLogo} className="h-12" alt="sawa logo" />
+            <Link
+              to="/"
+              className="text-white flex items-center gap-5 font-bold text-xl"
+            >
+              <img src={sawaLogo} className="h-12" alt="sawalogo" />
               <span>Sawa Ride</span>
             </Link>
           </div>
           <div className="hidden md:flex space-x-4">
             <NavLink
               to="/"
-              exact
-              className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              activeClassName="text-white font-bold"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-white font-bold px-3 py-2 rounded-md text-sm font-medium"
+                  : "text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              }
             >
               Home
             </NavLink>
             <NavLink
               to="/aboutus"
-              className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              activeClassName="text-white font-bold"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-white font-bold px-3 py-2 rounded-md text-sm font-medium"
+                  : "text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              }
             >
               About Us
             </NavLink>{" "}
             <NavLink
               to="/FAQ"
-              className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              activeClassName="text-white font-bold"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-white font-bold px-3 py-2 rounded-md text-sm font-medium"
+                  : "text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              }
             >
               FAQ
             </NavLink>
             <NavLink
               to="/download"
-              className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              activeClassName="text-white font-bold"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-white font-bold px-3 py-2 rounded-md text-sm font-medium"
+                  : "text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              }
             >
               Download
             </NavLink>
@@ -65,7 +79,6 @@ const Navbar = () => {
           <div className="px-4 pt-2 pb-3 space-y-1">
             <NavLink
               to="/"
-              exact
               className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
               activeClassName="text-white font-bold"
               onClick={toggleMenu}
@@ -74,16 +87,22 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/aboutUs"
-              className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
-              activeClassName="text-white font-bold"
+              className={({ isActive }) =>
+                isActive
+                  ? "block text-white font-bold px-3 py-2 rounded-md text-base font-medium"
+                  : "block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+              }
               onClick={toggleMenu}
             >
               About Us
             </NavLink>
             <NavLink
               to="/"
-              className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
-              activeClassName="text-white font-bold"
+              className={({ isActive }) =>
+                isActive
+                  ? "block text-white font-bold px-3 py-2 rounded-md text-base font-medium"
+                  : "block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+              }
               onClick={toggleMenu}
             >
               Download
