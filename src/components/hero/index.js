@@ -13,7 +13,7 @@ const HeroSection = () => {
 
       {/* Content Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-gray-900 opacity-30"></div>
-      <div className="relative z-30 p-5 text-2xl py-20 px-20 text-white ">
+      <div className="relative z-30 p-5 text-2xl py-10 px-10 text-white ">
         <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in">
           Book a Ride with Zero Commission
         </h1>
