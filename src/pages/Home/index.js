@@ -10,7 +10,6 @@ import FAQSection from '../../components/faqSection';
 function Home() {
     return ( 
         <>
-       
         <HeroSection />
         <FeaturesSection />
         <HowItWorksSection />
