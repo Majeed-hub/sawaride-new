@@ -1,23 +1,27 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-// import sawaLogo from "../../assets/images/sawa-logo.png";
+import sawaLogo from "../../assets/images/sawa-logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed w-full z-50 bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg">
+    <nav className="fixed w-full z-50 sm:bg-black sm:bg-opacity-50 sm:backdrop-filter sm:backdrop-blur-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
+          <div className="flex items-center ">
             <Link
               to="/"
-              className="text-white flex items-center gap-5 font-bold text-xl"
+              className="text-white flex items-center gap-5 font-bold text-xl "
             >
-              {/* <img src={sawaLogo} className="h-12" alt="sawalogo" /> */}
-              <span>Sawa Ride</span>
+              <img
+                src={sawaLogo}
+                className="h-12 hidden sm:block"
+                alt="sawalogo"
+              />
+              <span className="hidden sm:block">Sawa Ride</span>
             </Link>
           </div>
           <div className="hidden md:flex space-x-4">
@@ -79,8 +83,11 @@ const Navbar = () => {
           <div className="px-4 pt-2 pb-3 space-y-1">
             <NavLink
               to="/"
-              className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
-              activeClassName="text-white font-bold"
+              className={({ isActive }) =>
+                isActive
+                  ? "block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                  : "text-white font-bold"
+              }
               onClick={toggleMenu}
             >
               Home

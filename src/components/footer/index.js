@@ -10,7 +10,6 @@ const Footer = () => {
 
   const contactDetails = [
     { type: "email", value: "support@sawaride.app" },
-    { type: "phone", value: "+1 (555) 123-4567" },
     {
       type: "address",
       value:
