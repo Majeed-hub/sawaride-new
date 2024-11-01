@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 const faqs = [
   {
     question: "How does Sawa Ride's zero commission model work?",
@@ -14,7 +13,7 @@ const faqs = [
   {
     question: "How do I become a Sawa Ride driver?",
     answer:
-      "To become a Sawa Ride driver, download our app, sign up, and complete the verification process. Our team will guide you through the onboarding steps.",
+      "Only Saudi nationals can sign up to become drivers with SAWA RIDE. Interested applicants can visit our Driver Sign-Up page for more information.",
   },
 ];
 

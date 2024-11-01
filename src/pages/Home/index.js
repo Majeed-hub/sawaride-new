@@ -5,8 +5,9 @@ import HowItWorksSection from '../../components/howItWorks';
 import DriverBenefitsSection from '../../components/driver';
 import Testimonials from '../../components/testimonial';
 import DownloadAppSection from '../../components/downloadAppSection';
-import TeamSection from '../../components/teamSection';
+// import TeamSection from '../../components/teamSection';
 import FAQSection from '../../components/faqSection';
+import HowItWorks from '../../components/howItWorksTab';
 function Home() {
     return ( 
         <>
@@ -16,7 +17,8 @@ function Home() {
         <DriverBenefitsSection />
         <Testimonials />
         <DownloadAppSection />
-        <TeamSection />
+        {/* <TeamSection /> */}
+        <HowItWorks />
         <FAQSection />
       
         </>

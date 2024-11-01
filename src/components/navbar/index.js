@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import sawaLogo from "../../assets/images/sawa-logo.png";
+// import sawaLogo from "../../assets/images/sawa-logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,7 +16,7 @@ const Navbar = () => {
               to="/"
               className="text-white flex items-center gap-5 font-bold text-xl"
             >
-              <img src={sawaLogo} className="h-12" alt="sawalogo" />
+              {/* <img src={sawaLogo} className="h-12" alt="sawalogo" /> */}
               <span>Sawa Ride</span>
             </Link>
           </div>
