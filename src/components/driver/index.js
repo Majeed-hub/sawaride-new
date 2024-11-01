@@ -100,11 +100,10 @@ const DriverBenefitsSection = () => {
                   d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
                 ></path>
               </svg>
-              <h3 className="text-xl font-semibold">Growth Opportunities</h3>
+              <h3 className="text-xl font-semibold">In-App Support</h3>
             </div>
             <p className="text-gray-300">
-              Benefit from a supportive community of drivers and valuable
-              resources designed to help you thrive and grow in your journey
+              Access 24/7 assistance through the app, ensuring you have help whenever you need it for any ride-related issues.
             </p>
           </div>
         </div>

@@ -14,7 +14,7 @@ const Footer = () => {
 
       title: "",
       value:
-        "For any complaints or concerns, please reach out to us at support@sawaride.app For redressaal of grievance, please refer to Privacy Policy",
+        "For any complaints or concerns, please reach out to us at support@sawaride.app <br/>  For redressal of grievance, please refer to <br/> Privacy Policy",
     },
     
     {
@@ -61,13 +61,17 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact</h4>
+            <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-2">
               {contactDetails.map((detail) => (
                 <li key={detail.type} className="text-gray-400">
                   <b>{detail.title}</b>
-                  {(detail.type === "address") && <br/>}
-                  {detail.value}
+                  {detail.type === "address" && <br />}
+                  {detail.type === "email" ? (
+                    <span dangerouslySetInnerHTML={{ __html: detail.value }} />
+                  ) : (
+                    <span>{detail.value}</span>
+                  )}
                 </li>
               ))}
             </ul>
@@ -92,7 +96,8 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-400 text-sm">
-            &copy; 2024 Sawa Ride Information Technology Company Limited. All rights reserved.
+            &copy; 2024 Sawa Ride Information Technology Company Limited. All
+            rights reserved.
           </p>
         </div>
       </div>
