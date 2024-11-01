@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import sawaLogo from "../../assets/images/sawa-logo.png";
-
+// import GoogleTranslate from "../googleTranslate";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 

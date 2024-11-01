@@ -113,6 +113,9 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
+          <p className="text-gray-400 font-bold">
+            " Proudly Built In Saudi Arabia "
+          </p>
           <p className="text-gray-400 text-sm">
             &copy; 2024 Sawa Ride Information Technology Company Limited. All
             rights reserved.
