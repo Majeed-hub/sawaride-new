@@ -16,12 +16,12 @@ const HeroSection = () => {
       {/* Content Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-gray-900 opacity-30"></div>
 
-      <div className="relative z-30 p-5 text-2xl py-10 px-10 text-white flex flex-col items-center">
+      <div className="relative z-30 p-5 text-2xl pt-20 px-10 text-white flex flex-col items-center">
         <div>
           <img
             src={sawaLogo}
             alt="sawa logo"
-            className="w-20 md:w-32 mb-44 lg:w-32 mx-auto md:mx-0 black sm:hidden"
+            className="w-24 md:w-32 mb-40 lg:w-32 mx-auto md:mx-0 black sm:hidden"
           />
         </div>
 
