@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-// Array of FAQ questions and answers
 const faqs = [
   {
     question: "How does Sawa Ride's zero commission model work?",

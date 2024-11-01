@@ -4,6 +4,7 @@ import waleed from "../../assets/images/waleed-profile.png";
 import abdulrahman from "../../assets/images/abdulrahman-profile.png";
 import majeed from "../../assets/images/majeed-profile.png";
 import narmin from "../../assets/images/narmin-profile.png";
+import { NavLink } from 'react-router-dom';
 
 const teamMembers = [
   {
@@ -11,32 +12,38 @@ const teamMembers = [
     role: "Founder & CEO",
     description: "Visionary leader with a focus on innovation and excellence.",
     image: waleed, // Replace with actual image path
+    linkedin: "https://www.linkedin.com/in/waleedmuniri",
   },
   {
     name: "Prathmesh Gaikwad",
     role: "Co-Founder & CTO",
     description: "Tech innovator passionate about seamless user experiences.",
     image: prathmesh, // Replace with actual image path
+    linkedin: "https://www.linkedin.com/in/prathmesh-gaikwad-1640b8251/",
   },
   {
     name: "Abdulrahman M",
     role: "Co-Founder & COO",
     description: "Expert in operations and scaling platforms effectively.",
     image: abdulrahman, // Replace with actual image path
+    linkedin:
+      "https://www.linkedin.com/in/abdulrahman-alanazi-pmp%C2%AE-cscp-cfm-605214123/",
   },
   {
     name: "Abdul Majeed",
     role: "Tech Advisor",
     description:
       "Experienced tech advisor with a strong development background.",
-    image:majeed, // Replace with actual image path
+    image: majeed, // Replace with actual image path
+    linkedin: "https://www.linkedin.com/in/majeed-mohtesham",
   },
   {
     name: "Narmin Mohtesham",
     role: "Junior UI/UX Designer",
     description:
       "Creative designer focused on intuitive and engaging interfaces.",
-    image:narmin, // Replace with actual image path
+    image: narmin, // Replace with actual image path
+    linkedin: "https://www.linkedin.com/in/narmin-m-652917231/",
   },
 ];
 
@@ -56,11 +63,13 @@ const TeamSection = () => (
           >
             <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full relative">
               <div className="absolute inset-0 bg-gradient-to-b from-[#A5FF7E] to-[#00A8C6] opacity-80 rounded-full"></div>
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-full object-cover rounded-full relative z-10"
-              />
+              <NavLink to={member.linkedin}>
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover rounded-full relative z-10"
+                />
+              </NavLink>
             </div>
             <h3 className="text-xl font-semibold mb-2 text-center">
               {member.name}

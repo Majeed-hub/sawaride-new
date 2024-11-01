@@ -9,7 +9,7 @@ const Footer = () => {
   ];
 
   const contactDetails = [
-    { type: "email", value: "support@sawaride.com" },
+    { type: "email", value: "support@sawaride.app" },
     { type: "phone", value: "+1 (555) 123-4567" },
     {
       type: "address",
@@ -69,6 +69,8 @@ const Footer = () => {
             <div className="flex space-x-4">
               {socialLinks.map((link) => (
                 <SocialIcon
+                  bgColor="white"
+                  fgColor="black"
                   key={link.platform}
                   url={link.href}
                   className="text-gray-400 hover:text-white transition-colors duration-300"

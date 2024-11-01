@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -15,18 +16,21 @@ const HeroSection = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-gray-900 opacity-30"></div>
       <div className="relative z-30 p-5 text-2xl py-10 px-10 text-white ">
         <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in">
-          Book a Ride with Zero Commission
+          Book a Ride with{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A5FF7E] to-[#00A8C6] ">
+            Zero Commission
+          </span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 animate-fade-in">
           An app by drivers, for the people.{" "}
           <span className="text-gray-400">100% direct payment to drivers.</span>
         </p>
-        <a
-          href="#"
+        <NavLink
+        to={"/"}
           className="inline-block bg-white text-black font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
         >
           Download App
-        </a>
+        </NavLink>
       </div>
     </header>
   );
