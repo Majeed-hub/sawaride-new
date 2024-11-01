@@ -21,7 +21,7 @@ const HeroSection = () => {
           <img
             src={sawaLogo}
             alt="sawa logo"
-            className="w-24 md:w-32 mb-25 lg:w-32 mx-auto md:mx-0 black sm:hidden"
+            className="w-24 md:w-32 mb-24 lg:w-32 mx-auto md:mx-0 black sm:hidden"
           />
         </div>
 
