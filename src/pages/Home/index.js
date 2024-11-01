@@ -16,9 +16,9 @@ function Home() {
         {/* <HowItWorksSection />` */}
         <DriverBenefitsSection />
         <Testimonials />
+        <HowItWorks />
         <DownloadAppSection />
         {/* <TeamSection /> */}
-        <HowItWorks />
         <FAQSection />
       
         </>
