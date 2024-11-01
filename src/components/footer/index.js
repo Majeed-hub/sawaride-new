@@ -21,7 +21,7 @@ const Footer = () => {
       type: "address",
       title: "Registered Address",
       value:
-        "Street #61, Al Nadwah Dist, Riyadh, Kingdom of Saudi Arabia, 14813",
+        "Sawa Ride Information Technology Company Limited, Street #61, Al Nadwah Dist, Riyadh, Kingdom of Saudi Arabia, 14813",
     },
   ];
 
@@ -92,7 +92,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-400 text-sm">
-            &copy; 2023 Sawa Ride. All rights reserved.
+            &copy; 2024 Sawa Ride Information Technology Company Limited. All rights reserved.
           </p>
         </div>
       </div>
