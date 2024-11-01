@@ -103,8 +103,8 @@ const DriverBenefitsSection = () => {
               <h3 className="text-xl font-semibold">Growth Opportunities</h3>
             </div>
             <p className="text-gray-300">
-              Access to training, support, and a community of drivers to help
-              you succeed and grow.
+              Benefit from a supportive community of drivers and valuable
+              resources designed to help you thrive and grow in your journey
             </p>
           </div>
         </div>
