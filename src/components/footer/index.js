@@ -11,16 +11,15 @@ const Footer = () => {
   const contactDetails = [
     {
       type: "email",
+
+      title: "",
       value:
-        "For any complaints or concerns, please reach out to us at support@sawaride.app",
+        "For any complaints or concerns, please reach out to us at support@sawaride.app For redressaal of grievance, please refer to Privacy Policy",
     },
-    {
-      type: "redressal",
-      value:
-        "For redressaal of grievance, please refer to Privacy Policy",
-    },
+    
     {
       type: "address",
+      title: "Registered Address",
       value:
         "Street #61, Al Nadwah Dist, Riyadh, Kingdom of Saudi Arabia, 14813",
     },
@@ -66,6 +65,8 @@ const Footer = () => {
             <ul className="space-y-2">
               {contactDetails.map((detail) => (
                 <li key={detail.type} className="text-gray-400">
+                  <b>{detail.title}</b>
+                  {(detail.type === "address") && <br/>}
                   {detail.value}
                 </li>
               ))}
