@@ -9,7 +9,16 @@ const Footer = () => {
   ];
 
   const contactDetails = [
-    { type: "email", value: "support@sawaride.app" },
+    {
+      type: "email",
+      value:
+        "For any complaints or concerns, please reach out to us at support@sawaride.app",
+    },
+    {
+      type: "redressal",
+      value:
+        "For redressaal of grievance, please refer to Privacy Policy",
+    },
     {
       type: "address",
       value:
@@ -18,10 +27,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { platform: "Twitter", href: "https://www.twitter.com" },
+    { platform: "Twitter", href: "https://www.twitter.com/sawa_ride" },
     { platform: "Facebook", href: "https://www.facebook.com" },
-    { platform: "Instagram", href: "https://www.instagram.com" },
-    { platform: "LinkedIn", href: "https://www.linkedin.com" },
+    { platform: "Instagram", href: "https://www.instagram.com/sawa.ride" },
+    { platform: "LinkedIn", href: "https://www.linkedin.com/company/sawaride" },
   ];
 
   return (
