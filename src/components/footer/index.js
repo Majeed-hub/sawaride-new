@@ -11,12 +11,34 @@ const Footer = () => {
   const contactDetails = [
     {
       type: "email",
-
       title: "",
-      value:
-        "For any complaints or concerns, please reach out to us at support@sawaride.app <br/>  For redressal of grievance, please refer to <br/> Privacy Policy",
+      value: (
+        <>
+          For any complaints or concerns, please reach out to us at{" "}
+          <NavLink
+            to="mailto:support@sawaride.app"
+            className="text-gray-400 hover:text-white"
+          >
+            support@sawaride.app
+          </NavLink>
+        </>
+      ),
     },
-    
+    {
+      type: "privacy policy",
+      title: "",
+      value: (
+        <>
+          For redressal of grievances, please refer to{" "}<br/>
+          <NavLink
+            to="/privacy-policy"
+            className="text-gray-400 hover:text-white"
+          >
+            Privacy Policy
+          </NavLink>
+        </>
+      ),
+    },
     {
       type: "address",
       title: "Registered Address",
@@ -67,11 +89,7 @@ const Footer = () => {
                 <li key={detail.type} className="text-gray-400">
                   <b>{detail.title}</b>
                   {detail.type === "address" && <br />}
-                  {detail.type === "email" ? (
-                    <span dangerouslySetInnerHTML={{ __html: detail.value }} />
-                  ) : (
-                    <span>{detail.value}</span>
-                  )}
+                  <span>{detail.value}</span>
                 </li>
               ))}
             </ul>
